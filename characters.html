@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="img/logo.svg">
+        <meta name="author"
+            content="Invented by HoneyGirls, Designed by Temsamani Ikrame- Web developper">
+        <link rel="stylesheet" href="output.css" />
+        <title>The Virus of Cybertown</title>
+    </head>
+    <body class="min-h-screen">
+        <!-- MENU -->
+        <header>
+            <nav
+                class="border-gray-200 fixed top-0 z-50">
+                <div
+                    class="pageBanner flex flex-wrap items-center justify-between mx-auto bg-clip-padding w-screen h-full backdrop-blur-sm bg-opacity-50 md:backdrop-blur-none md:bg-opacity-0 md:bg-black bg-black">
+                    <a href="index.html"
+                        class="access flex items-center p-8 pl-8 md:pl-28">
+                        <img src="img/logo.svg"
+                            class="imgimg md:h-[15vh] h-[12vh] mr-3 access"
+                            alt="Wildiversity logo" />
+                    </a>
+
+                    <button data-collapse-toggle="navbar-default" type="button"
+                        id="burger-menu"
+                        class="access inline-flex items-center m-8 p-2 w-14 h-8 justify-center text-sm md:hidden"
+                        aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-10 h-10"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="#fff" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div
+                        class="hidden w-full h-screen md:h-full md:block md:w-auto menumenu"
+                        id="navbar-default">
+                        <ul
+                            class="menu flex w-full h-full justify-start items-center p-10 menu-list md:h-auto text-2xl md:flex-row flex-col md:p-0 mt-4 md:mt-0 md:border-0">
+                            <li
+                                class=" mr-8 relative transition-all duration-300 my-4">
+                                <a href="index.html"
+                                    aria-label="Menu"
+                                    class="access font-acuminsemicond font-medium relative uppercase md:text-base text-white menu-link">
+                                    HOME
+                                </a>
+                            </li>
+                            <li
+                                class="mr-8 relative transition-all duration-300 my-4">
+                                <a href="honeygirls.html"
+                                    aria-label="Menu"
+                                    class=" access font-acuminsemicond font-medium relative uppercase md:text-base text-white menu-link">
+                                    HoneyGirls
+                                </a>
+                            </li>
+                            <li
+                                class="mr-8 relative transition-all duration-300 my-4">
+                                <a href="rules.html"
+                                    aria-label="Menu"
+                                    class="access font-acuminsemicond font-medium relative uppercase md:text-base text-white menu-link">
+                                    Rules
+                                </a>
+                            </li>
+                            <li
+                                class="current mr-8 relative transition-all duration-300 my-4">
+                                <a href="characters.html"
+                                    aria-label="Menu"
+                                    class="access font-acuminsemicond font-medium relative uppercase md:text-base text-white menu-link">
+                                    Characters
+                                </a>
+                            </li>
+
+                            <li
+                                class="transition-all duration-300 my-10 vd">
+                                <a
+                                    class="access px-12 md:px-12 md:py-2 py-2 mr-0 md:mr-24 transition-all duration-300 bg-white hover:bg-bleuclair group"
+                                    href="quiz.html"
+                                    aria-label="Quizz">
+                                    <span
+                                        class="uppercase font-acuminsemicond font-medium relative text-black md:text-base group-hover:text-black">QUIz
+                                        !
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="min-h-screen">
+
+            <article class="ft-bg md:h-[40vh] h-[45vh] w-full">
+                <div
+                    class="w-full h-full flex flex-col justify-center items-center pt-36">
+                    <img class="h-[5vh] w-auto" src="img/characters.svg" alt>
+                </div>
+            </article>
+
+            <article
+                class=" flex flex-col items-center justify-center ">
+                <div
+                    class="flex flex-col items-center justify-center h-full w-[55%] pt-14 mb-14 ">
+                    <h2
+                        class="uppercase md:text-3xl text-xl font-bold text-bleufonce ">Choose
+                        an icon
+                    </h2>
+                    <div
+                        class="h-[2px] md:w-[150px] w-[150px] bg-bleufonce md:mt-4 mt-4 mb-10">
+                    </div>
+
+                    <div>
+                        <div class="flex gap-10 ">
+                            <button id="ic-citi">
+                                <img src="img/citizens.svg" alt="icon citizens"
+                                    class="h-[100px] w-auto ">
+                            </button>
+                            <button id="ic-vi">
+                                <img src="img/virus.svg" alt="icon virus"
+                                    class="h-[100px] w-auto ">
+                            </button>
+                            <button id="ic-mana">
+                                <img src="img/manager.svg"
+                                    alt=" icon community manager"
+                                    class="h-[100px] w-auto ">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <div
+                class="citizens hidden w-full bg-slate-200 h-1/2 flex-col justify-center items-center pt-14 pb-20">
+
+                <div class="flex flex-col justify-center items-center">
+                    <h2
+                        class="uppercase md:text-3xl text-xl font-bold text-bleufonce ">Web
+                        developpers
+                    </h2>
+                    <div
+                        class="h-[2px] md:w-[150px] w-[150px] bg-bleufonce md:mt-4 mt-4 mb-7">
+                    </div>
+                    <p class="text-bleufonce text-center w-[70%] text-lg mb-10">
+                        Represent online threats, cyber attacks, or viruses.
+                        Their goal is to disrupt the digital city.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <h2
+                        class="uppercase md:text-3xl text-xl font-bold text-bleufonce ">the
+                        hacker
+                    </h2>
+                    <div
+                        class="h-[2px] md:w-[100px] w-[100px] bg-bleufonce md:mt-4 mt-4 mb-7">
+                    </div>
+                    <p class="text-bleufonce text-center w-[70%] text-lg mb-10">
+                        Represent online threats, cyber attacks, or viruses.
+                        Their goal is to disrupt the digital city.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <h2
+                        class="uppercase md:text-3xl text-xl font-bold text-bleufonce ">
+                        data analyst
+                    </h2>
+                    <div
+                        class="h-[2px] md:w-[150px] w-[150px] bg-bleufonce md:mt-4 mt-4 mb-7">
+                    </div>
+                    <p class="text-bleufonce text-center w-[70%] text-lg mb-10">
+                        Represent online threats, cyber attacks, or viruses.
+                        Their
+                        goal is to disrupt the digital city.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <h2
+                        class="uppercase md:text-3xl text-xl font-bold text-bleufonce ">
+                        copywriter
+                    </h2>
+                    <div
+                        class="h-[2px] md:w-[100px] w-[100px] bg-bleufonce md:mt-4 mt-4 mb-7">
+                    </div>
+                    <p class="text-bleufonce text-center w-[70%] text-lg mb-10">
+                        Represent online threats, cyber attacks, or viruses.
+                        Their
+                        goal is to disrupt the digital city.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <h2
+                        class="uppercase md:text-3xl text-xl font-bold text-bleufonce ">
+                        digital project manager
+                    </h2>
+                    <div
+                        class="h-[2px] md:w-[200px] w-[200px] bg-bleufonce md:mt-4 mt-4 mb-7">
+                    </div>
+                    <p class="text-bleufonce text-center w-[70%] text-lg mb-10">
+                        Represent online threats, cyber attacks, or viruses.
+                        Their
+                        goal is to disrupt the digital city.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <h2
+                        class="uppercase md:text-3xl text-xl font-bold text-bleufonce ">
+                        digital strategist
+                    </h2>
+                    <div
+                        class="h-[2px] md:w-[150px] w-[150px] bg-bleufonce md:mt-4 mt-4 mb-7">
+                    </div>
+                    <p class="text-bleufonce text-center w-[70%] text-lg mb-10">
+                        Represent online threats, cyber attacks, or viruses.
+                        Their
+                        goal is to disrupt the digital city.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center">
+                    <h2
+                        class="uppercase md:text-3xl text-xl font-bold text-bleufonce ">
+                        webmarketer
+                    </h2>
+                    <div
+                        class="h-[2px] md:w-[150px] w-[150px] bg-bleufonce md:mt-4 mt-4 mb-7">
+                    </div>
+                    <p class="text-bleufonce text-center w-[70%] text-lg">
+                        Represent online threats, cyber attacks, or viruses.
+                        Their
+                        goal is to disrupt the digital city.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="virus hidden w-full bg-slate-200 h-1/2 flex-col justify-center items-center pt-14 pb-20">
+                <h2
+                    class="uppercase md:text-3xl text-xl font-bold text-bleufonce ">The
+                    virus
+                </h2>
+                <div
+                    class="h-[2px] md:w-[100px] w-[100px] bg-bleufonce md:mt-4 mt-4 mb-7">
+                </div>
+                <p class="text-bleufonce text-center md:w-[30%] w-[70%] text-lg">
+                    Represent online threats, cyber attacks, or viruses. Their
+                    goal is to disrupt the digital city.
+                </p>
+            </div>
+
+            <div
+                class="manager hidden w-full bg-slate-200 h-1/2 flex-col justify-center items-center pt-14 pb-20">
+                <h2
+                    class="uppercase md:text-3xl text-xl font-bold text-bleufonce ">
+                    Community Manager
+                </h2>
+                <div
+                    class="h-[2px] md:w-[200px] w-[200px] bg-bleufonce md:mt-4 mt-4 mb-7">
+                </div>
+                <p class="text-bleufonce text-center md:w-[30%] w-[70%] text-lg">
+                    He explains the rules and leads away the players into the
+                    game. He is the speaker of the story.
+                </p>
+            </div>
+
+        </div>
+
+        <footer
+            class="md:h-[9vh] h-auto w-[full] p-4 md:p-10 bg-bleufonce flex flex-col justify-center items-center">
+            <div
+                class="flex justify-center items-center w-[80%] md:gap-20 gap-10">
+                <p class="text-white">The Virus of Cybertown © 2023 by
+                    HoneyGirls
+                </p>
+                <div
+                    class="w-auto flex md:flex-row flex-col md:gap-5 gap-2">
+                    <a href="https://englishgame.softr.app/"><img
+                            src="img/english.png" class="h-[6vh] w-auto"
+                            alt="Englisg game logo"></a>
+                    <a href="https://www.mydigitalschool.com/"><img
+                            src="img/mds.png" class="h-[5vh] w-auto"
+                            alt="MyDigitalSchool logo"></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/validetta.js"></script>
+        <script src="js/validettaLang-fr-FR.js"></script>
+        <script src="js/js.cookie.min.js"></script>
+        <script src="js/gsap.min.js"></script>
+        <script src="js/ScrollTrigger.min.js"></script>
+        <script src="js/flowbite.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
