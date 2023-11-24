@@ -1101,8 +1101,8 @@ video {
   overflow: hidden;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded-3xl {
+  border-radius: 150px;
 }
 
 .rounded-\[100px\] {
