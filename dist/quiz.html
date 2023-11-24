@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="img/logo.svg">
+        <meta name="author"
+            content="Invented by HoneyGirls, Designed by Temsamani Ikrame- Web developper">
+        <link rel="stylesheet" href="output.css" />
+        <title>The Virus of Cybertown</title>
+    </head>
+    <body class="ft-bg w-full min-h-screen">
+        <!-- MENU -->
+        <header>
+            <nav
+                class="border-gray-200 fixed top-0 z-50">
+                <div
+                    class="pageBanner flex flex-wrap items-center justify-between mx-auto bg-clip-padding w-screen h-full backdrop-blur-sm bg-opacity-50 md:backdrop-blur-none md:bg-opacity-0 md:bg-black bg-black">
+                    <a href="index.html"
+                        class="access flex items-center p-8 pl-8 md:pl-28">
+                        <img src="img/logo.svg"
+                            class="imgimg md:h-[15vh] h-[12vh] mr-3 access"
+                            alt="Wildiversity logo" />
+                    </a>
+
+                    <button data-collapse-toggle="navbar-default" type="button"
+                        id="burger-menu"
+                        class="access inline-flex items-center m-8 p-2 w-14 h-8 justify-center text-sm md:hidden"
+                        aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-10 h-10"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="#fff" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div
+                        class="hidden w-full h-screen md:h-full md:block md:w-auto menumenu"
+                        id="navbar-default">
+                        <ul
+                            class="menu flex w-full h-full justify-start items-center p-10 menu-list md:h-auto text-2xl md:flex-row flex-col md:p-0 mt-4 md:mt-0 md:border-0">
+                            <li
+                                class=" mr-8 relative transition-all duration-300 my-4">
+                                <a href="index.html"
+                                    aria-label="Menu"
+                                    class="access font-acuminsemicond font-medium relative uppercase md:text-base text-white menu-link">
+                                    HOME
+                                </a>
+                            </li>
+                            <li
+                                class="mr-8 relative transition-all duration-300 my-4">
+                                <a href="honeygirls.html"
+                                    aria-label="Menu"
+                                    class=" access font-acuminsemicond font-medium relative uppercase md:text-base text-white menu-link">
+                                    HoneyGirls
+                                </a>
+                            </li>
+                            <li
+                                class="mr-8 relative transition-all duration-300 my-4">
+                                <a href="rules.html"
+                                    aria-label="Menu"
+                                    class="access font-acuminsemicond font-medium relative uppercase md:text-base text-white menu-link">
+                                    Rules
+                                </a>
+                            </li>
+                            <li
+                                class=" mr-8 relative transition-all duration-300 my-4">
+                                <a href="characters.html"
+                                    aria-label="Menu"
+                                    class="access font-acuminsemicond font-medium relative uppercase md:text-base text-white menu-link">
+                                    Characters
+                                </a>
+                            </li>
+
+                            <li
+                                class="transition-all duration-300 my-10 vd">
+                                <a
+                                    class="access px-12 md:px-12 md:py-2 py-2 mr-0 md:mr-24 transition-all duration-300 bg-bleuclair hover:bg-bleuclair group"
+                                    href="quiz.html"
+                                    aria-label="Quizz">
+                                    <span
+                                        class="uppercase font-acuminsemicond font-medium relative text-black md:text-base group-hover:text-black">QUIz
+                                        !
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <article
+            class="flex flex-col justify-center items-center w-[100%] h-auto ">
+            <img
+                class="h-[5vh] w-auto  mt-[40%] mb-[10%] md:mt-[12%] md:mb-[3%]"
+                src="img/quiz.svg" alt>
+            <div
+                class="text-bleufonce ft-bg border-white border-2 min-w-[50%] min-h-[80%] p-14 flex flex-col justify-center items-center text-center">
+                <div class="flex justify-center items-center ">
+                    <div id="question"
+                        class="field py-3 px-14 bg-white w-[80%] rounded-full"></div>
+                </div>
+                <div class="flex my-5">
+                    <img src id="image"
+                        class="min-w-[80px] max-w-[100px] h-auto">
+                </div>
+                <div class=" flex flex-col gap-2">
+                    <div class="flex py-3 px-14 bg-white rounded-full">
+                        <div class="field">1.</div>
+                        <button id="answerA" onclick="answerA_clicked()"></button>
+                    </div>
+                    <div class="flex py-3 px-14 bg-white rounded-full">
+                        <div class="field">2. </div>
+                        <button id="answerB" onclick="answerB_clicked()"></button>
+                    </div>
+                    <div class="flex py-3 px-14 bg-white rounded-full">
+                        <div class="field">3. </div>
+                        <button id="answerC" onclick="answerC_clicked()"></button>
+                    </div>
+                    <div class="flex py-3 px-14 bg-white rounded-full">
+                        <div class="field">4. </div>
+                        <button id="answerD" onclick="answerD_clicked()"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <button>
+
+            </button>
+
+        </article>
+
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/validetta.js"></script>
+        <script src="js/validettaLang-fr-FR.js"></script>
+        <script src="js/js.cookie.min.js"></script>
+        <script src="js/gsap.min.js"></script>
+        <script src="js/ScrollTrigger.min.js"></script>
+        <script src="js/flowbite.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/quiz.js"></script>
+    </body>
+</html>

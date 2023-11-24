@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "acumin-pro", sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+/* h2 span {
+    color: white;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+} */
+
+/* Transition with cover screen */
+.with-cover-leave-active,
+.with-cover-enter-active,
+.with-cover-leave-active .transition,
+.with-cover-enter-active .transition {
+    transition: transform 1s var(--easing);
+}
+
+.with-cover-leave .transition {
+    transform: translateX(100%);
+}
+
+.with-cover-leave-to .transition {
+    transform: translateX(0);
+}
+
+
+.with-cover-enter .transition {
+    transform: translateX(0);
+}
+
+.with-cover-enter-to .transition {
+    transform: translateX(-100%);
+}
+
+
+.nv-bg, .newsletters {
+    background-image: url(img/terre.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: inset 800em 0em 0em rgba(0, 0, 0, 0.2);
+    background-attachment: fixed;
+
+}
+
+/* .bg-two {
+    background-image: url(img/bg-two.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    box-shadow: inset 100em 0em 0em rgba(0, 0, 0, 0.2);
+} */
+
+.bg-simple {
+    background-image: url(img/bg-simple.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+.ft-bg {
+    background-image: url(img/fond.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 800em 0em 0em rgba(0, 0, 0, 0.2);
+    background-attachment: fixed;
+}
+
+.diver {
+    background-image: url(img/jungle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: inset 60em 0em 20em rgba(0, 0, 0, 0.5);
+    position: fixed;
+}
+
+.identity-ver {
+    background-image: url(img/animaljungle-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 22vh;
+    background-position: center center;
+}
+
+.nv {
+    box-shadow: inset 60em 0em 20em rgba(0, 0, 0, 0.5);
+}
+
+
+/* /* OUTLINE VISIBLE POUR L'ACCESSIBILITE *\  */
+.access:focus-visible {
+outline: 0.5em solid white;
+position: relative;
+top: 0;
+z-index: 1000;
+}
+
+/* /* SCROLLBAR *\  */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff80; 
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+}
+
+/* BUTTON */
+.cta {
+    position: relative;
+    margin: 0 30px 0 0;
+    width: 40px;
+    padding: 16px 25px;
+    transition: all 0.3s ease;
+}
+
+#dia.cta {
+    padding: 21px 25px;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 55px;
+    height: 55px;
+    transition: all 0.3s ease;
+    border: #fff 1px solid;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #fff;
+}
+
+.cta:hover span {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* /* /* MENU BTN *\  */
+
+.menu li:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.3s ease;
+    bottom: 1;
+}
+
+li.vd::after {
+    content:none;
+}
+
+.menu li:hover::after {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+li.current:after {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.imgvideo {
+    background-image: url(img/terre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 30em 0em 10em rgba(0, 0, 0, 0.5);
+}
+
+
+.wrong {
+    background-color: rgb(168, 43, 43);
+    color: #fff;
+}
+
+.right {
+    background-color: rgb(33, 164, 33);
+    color: #fff;
+}
+
